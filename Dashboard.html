@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="FavIcon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+        body{
+          background-color: #785036;
+        }
+        #Brown{
+            background-color: #5a3822;
+        }
+        .carousel-item{
+        min-height: 50vh;
+        background-color: #222327;
+        }
+    </style>
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">LIFT UP CHARITY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+    
+          <div class="d-flex m-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </div>
+          
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Feature2.html">Donate Now</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Profile
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="Feature3.html">Update Contact</a></li>
+
+                  <hr class="dropdown-divider">
+
+                  <li><a class="dropdown-item" href="#" id="LogOut" onclick="onLogOut()">Log Out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1> Join the Charity Dashboard community!</h1>
+                  <p>Ready to make a difference? Sign up now and join the Charity Dashboard community of passionate changemakers! </p>
+                  <p><a class="btn btn-lg btn-primary" href="SignUp.html">Sign up today</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Dive deeper into the possibilities that await you!</h1>
+                  <p>Are you eager to learn more about how you can make a meaningful impact through the Charity Dashboard? Let's dive deeper into the possibilities that await you! </p>
+                  <p><a class="btn btn-lg btn-primary" href="#Vision">Learn more</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1>One more for good measure.</h1>
+                  <p>Join the Charity Dashboard community and make a difference today! With our powerful platform, you can support a wide range of charitable causes with just a few clicks. From providing clean water to children in need, to empowering education initiatives, you can choose where your donations go.</p>
+                  <p><a class="btn btn-lg btn-primary" href="Feature2.html">Donate Now</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      
+      
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+      
+        <div class="container marketing">
+      
+          <!-- Three columns of text below the carousel -->
+          <div class="row">
+            <div class="col-lg-4 border rounded">
+
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Overview Dashboard</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+                    <image href="Image1.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                  </svg>
+                  
+              <h2 class="fw-normal text-light">Overview Dashboard</h2>
+              <p class="text-light">Gain a comprehensive overview of your charitable activities and impact. Monitor your donations, track progress, and stay up-to-date with the latest updates from the charities you support, all in one centralized dashboard.</p>
+              <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-lg-4 border rounded" id="Brown">
+
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Overview Dashboard</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+                    <image href="Image2.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                  </svg>
+                  
+              <h2 class="fw-normal text-light">Donation Analytics</h2>
+              <p class="text-light">Dive deep into the analytics of your giving journey. Visualize your donation patterns, analyze the impact of your contributions across different causes, and uncover valuable insights to enhance your philanthropic strategy.</p>
+              <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            
+            <div class="col-lg-4 border rounded">
+
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Overview Dashboard</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+                    <image href="Image3.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                  </svg>
+                  
+              <h2 class="fw-normal text-light">Community Engagement</h2>
+              <p class="text-light">Connect with a vibrant community of like-minded individuals. Explore shared goals, and leverage the power of collective action to amplify your impact. Stay connected, inspired, and motivated to make a positive difference together.</p>
+              <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+      
+      
+          <!-- START THE FEATURETTES -->
+      
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1 text-light fs-1" id="Vision">Our Vision</h2>
+              <p class="lead text-light">To create a world where compassion, generosity, and unity thrive, empowering individuals and communities to lead fulfilling lives.</p>
+            </div>
+            <div class="col-md-5">
+              <img src="https://cdn-bdedn.nitrocdn.com/jGoaZUTkJjSFdEbvPgJnwnMQCeABkxDC/assets/static/optimized/rev-6478ac1/wp-content/uploads/2020/07/agape-smiles.jpg" alt="Description of the image" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+            </div>
+          </div>
+          
+      
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1 text-light fs-1">Our Mission</h2>
+              <p class="lead text-light">Bringing Smiles to Miles</p>
+              <p class="text-light"><b class="h3 text-warning">M</b> etamorphosize the abandoned, neglected and marginalized children in reaching their dreams</p>
+              <p class="text-light"><b class="h3 text-warning">I</b> nstill joy in the heart of every philanthropist, sponsor and volunteer as they share their love and life</p>
+              <p class="text-light"><b class="h3 text-warning">L</b> end a supporting hand to various shelters as they provide, support and sustain the needs of every child</p>
+              <p class="text-light"><b class="h3 text-warning">E</b> mbody a community of joyful givers where generosity, mutual respect and love prevail</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img src="https://cdn-bdedn.nitrocdn.com/jGoaZUTkJjSFdEbvPgJnwnMQCeABkxDC/assets/static/optimized/rev-6478ac1/wp-content/uploads/2020/07/agape-mission-mile.jpg" alt="Description of the image" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+            </div>
+          </div>
+          
+      
+          <hr class="featurette-divider ">
+      
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1 text-light">Donate to Lift Up Charity</h2>
+              <p class="lead text-light">A generous heart is all we need. All details of the charity events, especially the budget needed will be transparent and will be sent through email.</p>
+            </div>
+            <div class="col-md-5">
+              <img src="data:image/jpeg;base64,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" alt="Description of the image" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+            </div>
+          </div>
+          
+      
+          <hr class="featurette-divider">
+      
+          <!-- /END THE FEATURETTES -->
+      
+        </div><!-- /.container -->
+      
+      
+         <!-- Footer -->
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          </ul>
+          <p class="text-center text-body-primary text-light">Copyright 2023 <a href="mailto:Gomichaelangelo69@email.com" class="link-light">LiftUpCharity</a>. All Rights Reserved.</p>
+        </footer>
+      </div>
+      </main>
+    
+
+
+
+
+    <script>
+      //onLogout
+    function onLogOut(){
+    if(confirm('Are you sure you want to logout?')){
+        window.location.href="Login.html";
+      }
+  }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Charity.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+ul li{
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.3s ease 0s;
+}
+
+ul li a:hover{
+    color:#785036;
+}
+
+.Logo img{
+    float: left;
+    width: 220px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.Main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Button */
+button{
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+
+    padding: 10px 20px;
+    border: 1px solid white;
+    
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+/* Button Hover */
+button:hover{
+    background-color: #785036;
+    color: black;
+}
+
+/* Title */
+.Title{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    color: #5a3822;
+    -webkit-text-stroke: 1px white;
+    font-size: 70px;
+}
+
+/* Tagline */
+.Tagline{
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    color: white;
+    font-size: 20px;
+}
+
+/* Buttons */
+.Button{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    color: white;
+    font-size: 15px;
+}
+
+.Btn{
+    background-color: #785036;
+    text-decoration: none;
+    color: white;
+
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.Btn:hover{
+    background-color: #5a3822;
+}
+
+.Container{
+    max-width: 1170px;
+    margin: auto;    
+}
+
+.Row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.Footer{
+    margin: 0;
+    padding: 30px 0;
+
+    background-color: #785036;
+    box-sizing: border-box;
+    border-top: 1px solid white;
+
+}
+
+
+.Footer-Column{
+    width: 22%;
+    padding: 0 15px;
+    text-align: center;
+}
+
+
+.Footer-Column h4{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+.Footer-Column h4 span{
+    color: rgba(0, 136, 169, 1);
+}
+
+/* Line */
+.Footer-Column h4::before{
+    content: '';
+    position: absolute;
+    left: 15;
+    bottom: -5px;
+    background-color: rgba(0, 136, 169, 1);
+    height: 3px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.Footer-Column p{
+    font-size: 14px;
+    color: #bbbbbb;
+    margin-top: 35px;
+}
+
+.Footer-Column ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.Footer-Column ul li a{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.Footer-Column ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.Footer-Column .Icon a{
+    margin-top: 25px;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin-right: 0 10px 10px 0;
+    margin-bottom: 20px;
+}
+
+.Footer-Column .Icon a:hover{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+}
+
+.Footer2{
+    margin: 0;
+    padding: 10px 10px;
+    background-color: black;
+    border-top: 1px solid white;
+}
+
+
+
+
+/* Copyright */
+div.Copyright{
+    min-height: 5vh;
+    padding: 5px 0;
+    background-color: #5a3822;
+    border-top: 2px solid #bbbbbb;
+}
+
+div.Copyright address{
+    text-align: center;
+    padding: 5px;
+    font-size: xx-small;
+    color: #bbbbbb;
+}
+
+div.Copyright address a{
+    font-size: xx-small;
+    color: #bbbbbb;
+}
